@@ -20,12 +20,8 @@ function MediaCard({
     <Card
       key={key}
       sx={{
-        marginLeft: 20,
-        marginRight: 20,
-        marginTop: "35px",
-        marginBottom: "40px",
-        paddingBottom: "40px",
         border: "1px solid",
+        marginBottom: "40px",
         borderRadius: "10px",
         boxShadow: "3px 3px 5px rgb(0 0 0 / 40%)",
         backgroundColor: "rgb(0 0 0 / 2%)",
@@ -92,7 +88,7 @@ function News() {
 
   return (
     <React.Fragment>
-      {news.map((n, key) => (
+      {news.map((n) => (
         <MediaCard key={n.gid} data={n} />
       ))}
       {loading && (

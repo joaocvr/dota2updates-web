@@ -9,11 +9,13 @@ function App() {
   return (
     <BrowserRouter>
       <AppBar />
-      <Routes>
-        <Route path="/" element={<News />} />
-        <Route path="/sign-in" element={<SingIn />} />
-        <Route path="/sign-up" element={<SingUp />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<News />} />
+          <Route path="/signin" element={<SingIn />} />
+          <Route path="/signup" element={<SingUp />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 }
